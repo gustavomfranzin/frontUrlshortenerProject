@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import api from '../../services/api';
+import * as S from './styled';
 
 
 function ShortenForm() {
@@ -19,11 +20,16 @@ const json = {originURL: url}
   }
 
   return (
-    <div className="App">
-     <h1>Hello World!</h1>
+    <div className="App"> 
+    <S.Header>
+    <h1>Hello World, shorten it!</h1>
+    <h3>Paste the URL to be shortened</h3>
+    </S.Header>
+    <S.Wrapper className="App">
+     
         <input
           type="text"
-          placeholder="Insira a URL que deseja encurtar"
+          placeholder="Digite a URL que deseja encurtar"
           onChange={(event) => setUrl(event.target.value)}
         />
         <button type="submit"
@@ -31,7 +37,10 @@ const json = {originURL: url}
         >
           <span>Encurtar URL</span>
         </button>
-        <a href={shortUrl}>{shortUrl}</a>
+    </S.Wrapper >
+    <S.linkShorted>
+    <a href={shortUrl}>{shortUrl}</a>
+    </S.linkShorted>
     </div>
   );
 }
