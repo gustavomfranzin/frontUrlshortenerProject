@@ -21,6 +21,7 @@ function ShortenForm() {
 
   return (
     <div className="App">
+    <div className="container">
       <S.Wrapper>
         <S.WrapperTitle>
         <h1>Hello World, shorten it!</h1>
@@ -47,9 +48,10 @@ function ShortenForm() {
       <S.LinkShorted>
         <a href={shortUrl}>{shortUrl}</a>
       </S.LinkShorted>
-
-      
     </div>
+    </div>
+
+    
   );
 }
 
