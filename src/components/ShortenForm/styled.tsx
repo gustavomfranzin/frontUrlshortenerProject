@@ -82,6 +82,7 @@ export const WrapperButton = styled.button`
     font-weight: bold;
     font-size: 16px;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.1);
+    
 
     &:hover {
       background-color: #32cd32;
@@ -96,6 +97,7 @@ export const WrapperButton = styled.button`
 `;
 
 export const LinkShorted = styled.div`
+  margin-top: 15%;
   display: flex;
   margin-top: 50px;
   width: 100%;
