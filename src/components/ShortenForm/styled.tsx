@@ -2,30 +2,86 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  width: 100%;
-  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  height: 55vh;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  background-color: white;
+  border-radius: 8px;
+  color: white;
+`;
+
+export const WrapperTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left:0;
   padding: 4px;
+  font-family: Verdana;
+
+  h1 {
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #00a6cb;
+  }
+  h3 {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ff3744;
+  }
+`;
+
+export const WrapperInput = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+  height: 70%;
+  font-family: Verdana;
+  background-color: white;
+  margin-bottom: 5%;
 
   input {
     border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 100%;
-    height: 44px;
+    border-radius: 20px;
+    margin-top: 7%;
+    margin-left: 0;
+    width: 80%;
+    height: 25px;
     padding: 8px;
     font-weight: 500;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.7);
   }
+`;
 
+export const WrapperImage = styled.img`
+  margin-left: 0;
+`;
+
+export const WrapperButton = styled.button`
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  border: 0px;
+  background-color: white;
+  margin-left: auto; 
+  margin-right: auto; 
+  background-color: transparent;
+  
   button {
-    background-color: #006400;
+    background-color: #ff3744;
     padding: 8px 16px;
-    margin: 0 16px;
-    height: 59px;
+    width: 100%;
+    height: 100%;
     border: 0px;
     border-radius: 8px;
     font-weight: bold;
     font-size: 16px;
-    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.1);
 
     &:hover {
       background-color: #32cd32;
@@ -39,29 +95,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Header = styled.div`
-  display: flex;
-  width: 40%;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  font-family: Verdana;
-  background-color: #006400;
-  border-radius: 8px;
-  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.7);
-  color: white;
-
-  h3 {
-    margin-top: 45px;
-    font-size: 14px;
-    color: #32cd32;
-  }
-`;
-
-export const linkShorted = styled.div`
+export const LinkShorted = styled.div`
   display: flex;
   margin-top: 50px;
   width: 100%;
