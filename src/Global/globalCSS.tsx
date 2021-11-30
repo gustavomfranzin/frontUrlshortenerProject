@@ -6,6 +6,7 @@ const GlobalCSS = createGlobalStyle`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 @media (max-width: 1080px) {
